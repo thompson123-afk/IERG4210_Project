@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" />
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/icon.png" class="logo"></a>
+        <img src="img/company_name.png" class="name">
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div id="breadcrumb"></div>
+
+  
+    </section>
+    
+
+
+    <main id="main-content">
+        <button id="category-toggle">☰ Categories</button>
+        <aside id="category-list">
+            <ul>
+                <li><a href="category.html?category=weapon">Weapons</a></li>
+                <li><a href="category.html?category=fashion">Fashion</a></li>
+                <li><a href="category.html?category=home-kitchen">Home & Kitchen</a></li>
+                <li><a href="category.html?category=toys">Toys</a></li>
+            </ul>
+        </aside>
+
+        <div class="product-list" id="product-list">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+        
+    </main>
+
+    
+    
+    <div id="shopping-list-container">
+        <div id="shopping-list">
+          Shopping list: $<span id="cart-total">0</span>
+        </div>
+        <div id="shopping-list-details">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Qty</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="shopping-list-items">
+              <!-- Dynamically filled via JavaScript -->
+            </tbody>
+          </table>
+          <button id="checkout-button">Check Out</button>
+        </div>
+      </div>
+      
+    
+     
+    
+  
+   
+
+    <script src="script.js"></script>
+</body>
+
+<script src="script.js"></script>
+</html>

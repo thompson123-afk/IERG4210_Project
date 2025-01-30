@@ -1,0 +1,464 @@
+
+body {
+    width: 100%;
+    background-color: dimgray;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: auto;
+    left: 20px;
+    margin: 5px;
+}    
+
+.name{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    width: 400px;
+    margin: 5px;
+
+}
+
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Ensures space between logo and nav */
+    padding: 50px 80px;  /* Adjusted padding to fit layout */
+    background: darkgrey;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    height: 80px;  /* Set a fixed height for consistency */
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#navbar li {
+    margin: 0 15px;  /* Adds space between nav items */
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+#category-list {
+    display: none;
+    
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px; /* Adjust width as needed */
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+#category-list ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#category-list ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#category-list ul li a:hover {
+    background-color: #9497f4;
+}
+/* Search bar styling */
+#search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.sticker_2, .sticker_3 {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.sticker_2 {
+    left: 20px;
+}
+
+.sticker_3 {
+    right: 20px;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#search-bar input {
+    flex: 1;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+#search-bar button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+#search-bar i {
+    font-size: 1.2rem;
+    color: #333;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#category-toggle {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    margin-left: 10px;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+.sticker_1 {
+    text-align: center; /* Centers the sticker horizontally */
+   
+}
+
+.sticker {
+    width: 600px; /* Adjust width for the sticker image */
+    height: 200px; /* Maintain aspect ratio */
+    
+}
+
+
+
+/* Product list grid layout */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);  /* 4 products per row */
+    column-gap: 100px;
+    row-gap: 30px;
+    justify-items: center;
+}
+
+/* Product card styling */
+.product {
+    position: relative;
+    background: rgb(203, 181, 215);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px;
+    left: 0px;
+    
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product-thumbnail {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.product-price {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+/* Shopping List Container */
+#shopping-list-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+#shopping-list {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#shopping-list:hover {
+    transform: scale(1.1);
+}
+
+#shopping-list-details {
+    display: none;
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    width: 300px;
+    font-size: 0.9em;
+}
+
+#shopping-list-container:hover #shopping-list-details {
+    display: block;
+}
+
+#shopping-list-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#shopping-list-details th, #shopping-list-details td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#shopping-list-details th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+
+/* Product Details Page */
+.product-details-page {
+    padding: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Product Details Layout */
+.product-details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 8000px;
+    background-color: rgb(142, 96, 96);
+    padding: 120px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image Section */
+.product-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+/* Product Info Section */
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.product-info h1 {
+    font-size: 2em;
+    color: #040303;
+}
+
+.product-info p {
+    font-size: 1.2em;
+    color: #2e2d2d;
+}
+
+.product-info button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-info button:hover {
+    background-color: #218838;
+}
+
+/* Shopping List Container (Bottom-Left) */
+#shopping-list-container {
+    position: fixed;
+    bottom: 0;
+    right: 20px; /* Align to the left corner */
+    width: 200px;
+    height: 100px;
+    font-family: Arial, sans-serif;
+}
+
+#shopping-list {
+    background-color: #333;
+
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#shopping-list:hover {
+    transform: scale(1.05);
+}
+
+/* The hidden details that appear on hover */
+#shopping-list-details {
+    display: none;
+    position: absolute;
+    bottom: 50px; /* Position just above the "Shopping list:" bar */
+    right : 150px;
+    width: 600px;
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 0.9em;
+}
+
+/* Show the details on container hover */
+#shopping-list-container:hover #shopping-list-details {
+    display: block;
+}
+
+#shopping-list-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#shopping-list-details th, #shopping-list-details td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#shopping-list-details th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#checkout-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#checkout-button:hover {
+    background-color: #0056b3;
+}
+
+#breadcrumb {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.breadcrumb-link {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.breadcrumb-current {
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <title>The CHill Guy Market</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" />
+    <link rel="stylesheet"  href="style.css">  
+    
+    <!--tells the browser to apply the style defined in the style.cc file to the HTML Doc-->
+
+</head>
+
+<body>
+
+<section id="header">
+    <a href = "#"><img src = "img/icon.png" class="logo"></a>
+    <img src = "img/company_name.png" class="name" >
+
+    <nav>
+         <ul id = "navbar">
+<li><a href ="index.html">Home</a></li>
+<li><a href ="shop.html">Shop</a></li>
+<li><a href ="about.html">About</a></li>
+<li><a href ="cobtact.html">Contact</a></li>
+<li><a href ="blog.html">Blog</a></li>
+<li><a href ="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+         </ul>
+
+        </nav>
+
+        <div id="breadcrumb"></div>
+    
+</section>
+
+<section id="main-content">
+    <!-- Sidebar Button -->
+    
+
+    <button id="category-toggle">☰ Categories</button>
+    <aside id="category-list">
+        <ul>
+            <li><a href="category.html?category=weapon">Weapons</a></li>
+            <li><a href="category.html?category=fashion">Fashion</a></li>
+            <li><a href="category.html?category=home-kitchen">Home & Kitchen</a></li>
+            <li><a href="category.html?category=toys">Toys</a></li>
+        </ul>
+    </aside>
+
+
+<div id="search-bar">
+    <input type="text" placeholder="Search for products..." id="search-input">
+    <button type="submit" id="search-btn">Search</button>
+    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+ </div>
+
+ <div class="sticker_2">
+    <img src="img/sticker2.png" alt="Decorate1" class="sticker_2">
+</div>
+<div class="sticker_3">
+    <img src="img/sticker3.png" alt="Decorate2" class="sticker_3">
+</div>
+ <div class="sticker_1">
+    <img src="img/sticker1.png" alt="Best-Sellers of the Month" class="sticker">
+</div>
+
+
+
+</section>
+
+    
+
+
+<!-- Best Sellers Section -->
+
+    
+    <div class="product-list">
+        <!-- Example products -->
+        <div class="product">
+            <a href="product.html?id=1">
+                <img src="img/product1.png" alt="Product 1" class="product-thumbnail">
+                <p class="product-name">Pou Pou Plush</p>
+            </a>
+            <p class="product-price">$10.00</p>
+           
+            <button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+            
+        </div>
+        <div class="product">
+            <a href="product.html?id=2">
+                <img src="img/product2.png" alt="Product 2" class="product-thumbnail">
+                <p class="product-name">Pou Pou Slipper</p>
+            </a>
+            <p class="product-price">$15.00</p>
+            <button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="product">
+            <a href="product.html?id=3">
+                <img src="img/product3.png" alt="Product 3" class="product-thumbnail">
+                <p class="product-name">Cooking Pan (PUBG)</p>
+            </a>
+            <p class="product-price">$20.00</p>
+            <button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="product">
+            <a href="product.html?id=4">
+                <img src="img/product4.png" alt="Product 4" class="product-thumbnail">
+                <p class="product-name">Will Smith Slaps Chris Rock Figure</p>
+            </a>
+            <p class="product-price">$25.00</p>
+            <button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="product">
+            <a href="product.html?id=5">
+                <img src="img/product5.png" alt="Product 5" class="product-thumbnail">
+                <p class="product-name">Sponge Bob Dish Washing Sponge Holder</p>
+            </a>
+            <p class="product-price">$25.00</p>
+            <button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="product">
+            <a href="product.html?id=6">
+                <img src="img/product6.png" alt="Product 6" class="product-thumbnail">
+                <p class="product-name">The Chill Guy T-Shirt</p>
+            </a>
+            <p class="product-price">$50.00</p>
+            <button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="product">
+            <a href="product.html?id=7">
+                <img src="img/product7.png" alt="Product 7" class="product-thumbnail">
+                <p class="product-name">Jinx Shark Gun</p>
+            </a>
+            <p class="product-price">$300.00</p>
+            <button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        <div class="product">
+            <a href="product.html?id=8">
+                <img src="img/product8.png" alt="Product 8" class="product-thumbnail">
+                <p class="product-name">Jayce Mercury Hammer</p>
+            </a>
+            <p class="product-price">$50.00</p>
+            <button class="add-to-cart">Add to Cart <i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+        
+            
+        <!-- Repeat for other products -->
+    </div>
+
+    <!-- Shopping List (Bottom-Left Corner) -->
+<div id="shopping-list-container">
+    <div id="shopping-list">
+      Shopping list: $<span id="cart-total">0</span>
+    </div>
+    <div id="shopping-list-details">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="shopping-list-items">
+          <!-- Dynamically filled via JavaScript -->
+        </tbody>
+      </table>
+      <button id="checkout-button">Check Out</button>
+    </div>
+  </div>
+  
+
+ 
+
+
+
+<script src = "script.js"></script>
+
+  <!--java script is for dynamic content-->
+
+</body>
